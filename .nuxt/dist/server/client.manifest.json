@@ -1,0 +1,15 @@
+{
+  "@vite/client": {
+    "isEntry": true,
+    "file": "@vite/client",
+    "css": [],
+    "module": true,
+    "resourceType": "script"
+  },
+  "/home/error/Documents/GitHub/BAAS/nuxt_polynotes/poly/Nuxt_Demo/node_modules/nuxt/dist/app/entry.js": {
+    "resourceType": "script",
+    "module": true,
+    "isEntry": true,
+    "file": "/home/error/Documents/GitHub/BAAS/nuxt_polynotes/poly/Nuxt_Demo/node_modules/nuxt/dist/app/entry.js"
+  }
+}

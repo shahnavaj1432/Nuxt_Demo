@@ -1,28 +1,13 @@
 <template>
     <div>
         <NavBar />
-      <Nuxt />
-      
+     
+      <slot />
     </div>
-    <!-- <Footer /> -->
+    <Footer />
     
   </template>
    
-  <script>
-  import Header from '~/components/Header.vue'
-  import Footer from '~/components/Footer.vue'
-  import {NavBar} from '~/components/NavBar.vue'
-
-  export default {
-    components: {
-      Header,
-      Footer,
-      NavBar,
-     
-      
-    }
-  }
-  </script>
 
 
 <style>

@@ -1,7 +1,7 @@
 <template>
     <div>
         
-      <h1>Events</h1>
+ <Feature/>
     </div>
   </template>
 <script>
