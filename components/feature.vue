@@ -1,55 +1,39 @@
 <template>
-    <div class="bg-white py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:text-center">
-          <h2 class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need to deploy your app</p>
-          <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
-        </div>
-        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-            <div v-for="feature in features" :key="feature.name" class="relative pl-16">
-              <dt class="text-base font-semibold leading-7 text-gray-900">
-                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                  <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
-                </div>
-                {{ feature.name }}
-              </dt>
-              <dd class="mt-2 text-base leading-7 text-gray-600">{{ feature.description }}</dd>
+  <!-- component -->
+  <div class="text-gray-900 pt-12 pr-0 pb-14 pl-0 bg-white">
+    <div class="w-full pt-4 pr-5 pb-6 pl-5 mt-0 mr-auto mb-0 ml-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16
+        max-w-7xl">
+      <div class="flex flex-col items-center sm:px-5 md:flex-row">
+        <div class="flex flex-col items-start justify-center w-full h-full pt-6 pr-0 pb-6 pl-0 mb-6 md:mb-0 md:w-1/2">
+          <div class="flex flex-col items-start justify-center h-full space-y-3 transform md:pr-10 lg:pr-16
+              md:space-y-5">
+            <div class="bg-green-500 flex items-center leading-none rounded-full text-gray-50 pt-1.5 pr-3 pb-1.5 pl-2
+                uppercase inline-block">
+              <p class="inline">
+                <svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewbox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0
+                    00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755
+                    1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1
+                    0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </p>
+              <p class="inline text-xs font-medium"></p>
             </div>
-          </dl>
+            <a class="text-4xl font-bold leading-none lg:text-5xl xl:text-6xl">Welcome To Polytechnic Notes!</a>
+            <div class="pt-2 pr-0 pb-0 pl-0">
+         
+              <p class="mb-0 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-black-400">We are excited to have you here and hope that you find our platform to be a valuable resource for your educational journey. Our goal is to provide high-quality, comprehensive notes and study materials for students pursuing technical and vocational education.</p>
+              <button class="inline-flex text-white bg-blue-500 py-2 px-4 focus:outline-none hover:bg-opacity-80 rounded text-sm">Explore Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <div class="block">
+            <img
+                src="https://img.freepik.com/free-vector/focused-tiny-people-reading-books_74855-5836.jpg?w=996&t=st=1682586133~exp=1682586733~hmac=6720f6ee1857172a386fb9fdac4fd438046051c919370b8fbb4fc9b8ea27934a" class="object-cover rounded-lg max-h-64 sm:max-h-96 btn- w-full h-full"/>
+          </div>
         </div>
       </div>
+      
     </div>
+  </div>
   </template>
-  
-  <script setup>
-  import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/vue/24/outline'
-  
-  const features = [
-    {
-      name: 'Push to deploy',
-      description:
-        'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-      icon: CloudArrowUpIcon,
-    },
-    {
-      name: 'SSL certificates',
-      description:
-        'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-      icon: LockClosedIcon,
-    },
-    {
-      name: 'Simple queues',
-      description:
-        'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-      icon: ArrowPathIcon,
-    },
-    {
-      name: 'Advanced security',
-      description:
-        'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-      icon: FingerPrintIcon,
-    },
-  ]
-  </script>
