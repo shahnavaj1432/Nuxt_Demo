@@ -1,0 +1,1 @@
+import{a as e,b as t,o as c,e as n}from"./entry.4bc65be1.js";const o={},s=n("h1",null,"Create An Event",-1),a=[s];function r(_,l){return c(),t("div",null,a)}const f=e(o,[["render",r]]);export{f as default};
