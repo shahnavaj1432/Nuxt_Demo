@@ -118,7 +118,7 @@ module.exports = {
             },
 
             //Amber
-            tb: {
+            amber: {
                 50: '#fffbeb',
                 100: '#fef3c7',
                 200: '#fde68a',
@@ -188,7 +188,7 @@ module.exports = {
             },
 
             //Teal
-            teal: {
+            tb: {
                 50: '#f0fdfa',
                 100: '#ccfbf1',
                 200: '#99f6e4',
