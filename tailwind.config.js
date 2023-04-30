@@ -3,9 +3,9 @@ module.exports = {
   content: [],
   theme: {
     extend: {
-        fontFamily: {
-            sans: ['Roboto', ...defaultTheme.fontFamily.sans],
-        },
+        // fontFamily: {
+        //     sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+        // },
         colors: {
             //Indigo
             Indigo: {
@@ -118,7 +118,7 @@ module.exports = {
             },
 
             //Amber
-            Amber: {
+            tb: {
                 50: '#fffbeb',
                 100: '#fef3c7',
                 200: '#fde68a',
@@ -174,7 +174,7 @@ module.exports = {
             },
 
             //Emerald
-            tb: {
+            emerald: {
                 50: '#ecfdf5',
                 100: '#d1fae5',
                 200: '#a7f3d0',
