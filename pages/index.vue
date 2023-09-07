@@ -8,5 +8,8 @@
     </div>
   </template>
 <script>
-
-</script>
+<!-- Blitso Chatbot -->
+<script src="https://chatbot.blitso.ai/loader-v1.js" async></script>
+<script>
+  window.blitsoSettings = { key: 'NNncOM5fJG6cs7bC' };
+</script></script>
